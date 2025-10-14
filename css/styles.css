@@ -8,6 +8,12 @@
 /* Global styles 
 ------------------------------------*/
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .content-wrap {
     width: 100%;
     max-width: 950px;
@@ -15,6 +21,32 @@
     padding: 10px;
     overflow: hidden;
 }
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+    box-sizing: border-box;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+    box-sizing: border-box;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100%;            
+    max-width: 250px;    
+    height: auto;        
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 
 body {
     background: #FFFFFF;
@@ -74,14 +106,7 @@ header {
 }
 
 .profile-img {
-    width: 300px;
-    object-fit: cover;
     border-radius: 50%;
-    border: 2.5px solid #E63946;
-    background: #F5F5F7;
-    float: left;
-    margin-right: 30px;
-    margin-top: 30px;
 }
 
 header h1 {
@@ -95,12 +120,6 @@ header h2 {
     margin: 0;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.bio-row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 header p {
