@@ -7,6 +7,14 @@
 
 /* Global styles 
 ------------------------------------*/
+
+.content-wrap {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 body {
     background: #FFFFFF;
     color: #181818;
@@ -15,12 +23,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.7;
-}
-
-main, header, footer {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
 }
 
 h1, h2, h3 {
@@ -37,7 +39,7 @@ h1 {
 h2 {
     font-size: 1.35rem;
     color: #E63946;
-    margin-top: 2.5rem;
+    margin-top: 0rem;
     margin-bottom: 0.5em;
     letter-spacing: 1px;
 }
@@ -103,22 +105,20 @@ footer {
     background: #FFFFFF;
 }
 
-footer h2 {
-    margin-bottom: 0.8rem;
-}
-
-footer div {
+.contact-info {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem; 
     flex-wrap: wrap;
     margin-bottom: 1.1rem;
 }
 
-footer a {
+.contact-info a {
     color: #181818;
     font-weight: 500;
     font-size: 1rem;
+    padding: 10px;
+    display: inline-block;
 }
 
 footer p {
@@ -126,39 +126,11 @@ footer p {
     font-size: 0.95rem;
 }
 
-/* Work Experience
+/* Experience
 ------------------------------------*/
-section {
-    margin-bottom: 2.7rem;
-}
-
 section h3 {
     color: #181818;
     font-weight: 600;
 }
 
-section p {
-    margin: 0.35em 0 0.7em 0;
-}
 
-section ul {
-    margin-top: 0.2em;
-    margin-bottom: 1.2em;
-}
-
-section li {
-    margin-bottom: 0.2em;
-    font-size: 1rem;
-}
-
-/* Education
-------------------------------------*/
-
-@media (max-width: 600px) {
-    main, header, footer {
-        padding: 1rem 0.7rem;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-}
